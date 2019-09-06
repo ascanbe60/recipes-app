@@ -1,5 +1,6 @@
 import Document, { Head, Main, NextScript } from 'next/document';
 import { ServerStyleSheet } from 'styled-components';
+import GlobalStyle from '../styles/GlobalStyle';
 
 class MyDocument extends Document {
   static getInitialProps({ renderPage }) {
@@ -16,6 +17,7 @@ class MyDocument extends Document {
       <html>
         <Head>{this.props.styleTags}</Head>
         <body>
+          <GlobalStyle />
           <Main />
           <NextScript />
         </body>

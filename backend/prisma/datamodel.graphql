@@ -1,0 +1,13 @@
+type User {
+  id: ID! @id @unique
+  name: String!
+  email: String! @unique
+  password: String!
+}
+
+type Recipe {
+  id: ID! @id @unique
+  title: String!
+  ingredients: [String!]! @scalarList(strategy: RELATION)
+  instructions: [String!]! @scalarList(strategy: RELATION)
+}

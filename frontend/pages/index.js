@@ -1,3 +1,9 @@
-const Index = props => <div>Hi, I'm the index page!</div>;
+import Recipes from '../components/Recipes';
+
+const Index = props => (
+  <div>
+    <Recipes />
+  </div>
+);
 
 export default Index;
