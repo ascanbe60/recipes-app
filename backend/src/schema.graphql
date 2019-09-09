@@ -1,29 +1,16 @@
 # import * from './generated/prisma.graphql'
 
 type Query {
-  users: [User]!
   recipes: [Recipe]!
 }
 
 type Mutation {
-  createUser(
-    name: String!
-    email: String!
-    password: String!
-  ): User!
   createRecipe(
     title: String!
     ingredients: [String!]!
     instructions: [String!]!
   ): Recipe!
   deleteRecipe(id: ID!): Recipe
-}
-
-type User {
-  id: ID!
-  name: String!
-  email: String!
-  password: String!
 }
 
 type Recipe {

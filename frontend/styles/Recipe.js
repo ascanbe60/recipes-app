@@ -5,6 +5,8 @@ const Recipe = styled.div`
   padding: 1rem;
   border-radius: 5px;
   border: solid 1px rgba(0,0,0,.2);
+  display: flex;
+  flex-direction: column;
   h3, ul {
     margin-top: 0;
   }
@@ -13,7 +15,7 @@ const Recipe = styled.div`
     list-style-type: none;
   }
   h4 {
-    margin: 0;
+    margin: 0 0 .3rem;
   }
 `;
 

@@ -27,6 +27,7 @@ const DELETE_RECIPE = gql`
 
 const Details = styled.div`
   display: flex;
+  flex-grow: 1;
   > div {
     width: 50%;
   }
